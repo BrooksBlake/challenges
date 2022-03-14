@@ -1,0 +1,21 @@
+@import "./variables.scss";
+div.header {
+    top: 0;
+    height: 6.75rem;
+    width: 100vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.875rem;
+    color: #fff;
+    background-color: $BlogBlack;
+    font-family: "Merriweather Sans", sans-serif;
+    img {
+        width: 3.5rem;
+        margin-left: 4rem;
+    }
+    p {
+        font-weight: $Bold;
+        font-size: $Medium;
+    }
+}
