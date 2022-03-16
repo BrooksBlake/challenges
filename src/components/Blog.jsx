@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Header from "./Header";
 
 const Blog = () => {
   return (
-    <div>Blog</div>
-  )
-}
+    <div className="blog">
+      <Header />
+    </div>
+  );
+};
 
 export default Blog;
