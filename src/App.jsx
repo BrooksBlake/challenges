@@ -2,10 +2,11 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Landing from "./components/Landing";
 import Blog from "./components/Blog";
+import "./App.css"
 
 function App() {
   return (
-    <div style={{ width: "100vw", maxHeight: "1440px" }} className="App">
+    <div className="App">
       <Router>
         <Routes>
           <Route exact path="/" element={<Landing />} />

@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import "./variables.scss";
+div.blog {
+    margin: 0;
+    padding: 0;
+    div.mainBlog {
+        padding: 0;
+        margin: 27px auto;
+        width: 100%;
+        max-width: 81.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        div.cover {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center; // margin: 0 auto;
+            h1 {
+                font-family: 'Playfair Display', serif;
+                font-size: $X-Large;
+                line-height: 63.98px;
+                font-weight: $Regular;
+            }
+            div.icons {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                margin-top: 2.5rem;
+                margin-bottom: 1.563rem;
+                p {
+                    font-size: $Large;
+                    font-weight: $Light;
+                    color: $BlogGrey;
+                    font-family: "Merriweather Sans", sans-serif;
+                }
+                span {
+                    margin: 0 10px;
+                    img {
+                        width: 2.5rem;
+                    }
+                }
+            }
+            img.blog-cover {
+                width: 81.25rem;
+                margin-bottom: 0;
+            }
+            p.writer {
+                font-size: $Small;
+                color: $BlogGrey;
+                margin-top: 0px;
+                margin-bottom: 2.5rem;
+            }
+            div.blog-info {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                gap: 0.75rem;
+                margin-bottom: 3.75rem;
+                p {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 0.3rem;
+                }
+            }
+        }
+        div.story {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            flex-direction: column;
+            width: 62.5rem;
+            font-size: 1.438rem;
+            p {
+                margin-bottom: 2.5rem;
+                color: #000229;
+                font-weight: $Light;
+                line-height: 37px;
+                text-align: left;
+            }
+        }
+        div.reader-comments {
+            width: 100%;
+            max-width: 82rem;
+            h1 {
+                color: $BlogBlue;
+                display: flex;
+                justify-content: left;
+            }
+            .comment-box {
+                height: 100%;
+                max-height: 59rem;
+                background-color: #F5F5F599;
+                border-top: 1px solid $BlogBlack;
+                display: flex;
+                justify-content: left;
+                align-items: left;
+                flex-direction: column;
+                padding: 50px 0 0 15px;
+                .comments {
+                    border-radius: 1.875rem;
+                    height: 8.625rem;
+                    width: 62.5rem;
+                    background-color: $BlogWhite;
+                    margin-left: 15px;
+                    margin-bottom: 2.375rem;
+                    box-shadow: 3px 4px 5px #40404040;
+                    padding-bottom: 0;
+                    p.text {
+                        font-size: $Small;
+                        margin: 20px 35px;
+                        line-height: 21px;
+                        font-weight: $Light;
+                    }
+                    div.extra {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        margin-top: 25px;
+                        margin-bottom: 0;
+                        p.info {
+                            display: flex;
+                            justify-content: space-between;
+                            flex-direction: column;
+                            margin-left: 35px;
+                            .name {
+                                font-size: 20px;
+                            }
+                            .time {
+                                font-size: 14px;
+                                color: $BlogGrey;
+                            }
+                        }
+                        p.reply {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-right: 10px;
+                            font-size: 14px;
+                            color: #838181;
+                        }
+                    }
+                }
+                div.join {
+                    width: 76.25rem;
+                    background-color: $BlogWhite;
+                    height: 30rem;
+                    margin-bottom: 30px;
+                    margin-left: 25px;
+                }
+            }
+        }
+        div.top-stories {
+            width: 100%;
+            max-width: 82rem;
+            margin-top: 70px;
+            h1 {
+                color: $BlogBlue;
+                display: flex;
+                justify-content: left;
+            }
+            div.container {
+                border-top: 1px solid $BlogBlack;
+                // padding: 30px;
+                width: 100%;
+                height: 100%;
+                background-color: #F5F5F599;
+                display: flex;
+                // flex-basis: 20%;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                div.singlestory {
+                    margin: 60px 15px 15px 15px;
+                    // flex-basis: 30%;
+                    max-width: 24rem;
+                    flex-wrap: wrap;
+                    p {
+                        font-size: 24px;
+                        max-width: 240px;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
